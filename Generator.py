@@ -1,3 +1,10 @@
+"""
+Program Name: Generator.py
+Author: Ryan Cho
+Generates test and train images for CNN.py
+NOTE: VERY SLOW AT THE MOMENT idk why
+"""
+
 import random
 import os
 import urllib
@@ -19,9 +26,10 @@ for i in range(10):
     url = str("https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/Landsat_WELD_NDVI_Global_Monthly/default/2010-04-01/31.25m/"
               + str(tiling_resolution) + "/" + str(column_num) + "/" + str(row_num) + ".jpg")
     urllib.urlretrieve(url, str(i) + ".jpg")
-    os.rename("/Users/ryancho/Documents/Github/systemsCNN/"+str(i)+".jpg", "/Users/ryancho/Documents/Github/systemsCNN/training/"+str(i)+".jpg")
+    os.rename("/Users/ryancho/Documents/Github/tree-ml/"+str(i)+".jpg",
+              "/Users/ryancho/Documents/Github/tree-ml/training/"+str(i)+".jpg")
 
-or i in range(10):
+for i in range(10):
     #tiling_resolution = random.randint(0, 11)
     tiling_resolution = 11
     column_num = 320
@@ -31,4 +39,5 @@ or i in range(10):
     url = str("https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/Landsat_WELD_NDVI_Global_Monthly/default/2010-04-01/31.25m/"
               + str(tiling_resolution) + "/" + str(column_num) + "/" + str(row_num) + ".jpg")
     urllib.urlretrieve(url, str(i) + ".jpg")
-    os.rename("/Users/ryancho/Documents/Github/systemsCNN/"+str(i)+".jpg", "/Users/ryancho/Documents/Github/systemsCNN/test/"+str(i)+".jpg")
+    os.rename("/Users/ryancho/Documents/Github/tree-ml/"+str(i)+".jpg",
+              "/Users/ryancho/Documents/Github/tree-ml/test/"+str(i)+".jpg")
