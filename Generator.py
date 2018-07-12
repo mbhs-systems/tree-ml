@@ -3,6 +3,7 @@ Program Name: Generator.py
 Author: Ryan Cho
 Generates test and train images for CNN.py
 NOTE: VERY SLOW AT THE MOMENT idk why
+THIS IS USELESS DON'T USE THIS
 """
 
 import random

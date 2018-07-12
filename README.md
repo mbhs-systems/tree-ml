@@ -1,3 +1,5 @@
 # tree-ml
 
-Requirements: Python 2
+## Note
+
+Don't use Generator.py it's useless
