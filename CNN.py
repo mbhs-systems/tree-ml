@@ -1,7 +1,7 @@
 """
 File Name: CNN
 Author: Ryan Cho
-Implementation of Keras and Tensorflow
+CNN using tensorflow
 """
 import tensorflow as tf
 import numpy as np
