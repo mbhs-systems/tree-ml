@@ -1,0 +1,3 @@
+[submodule "semantic-segmentation"]
+	path = semantic-segmentation
+	url = git@github.com:mbhs-systems/semantic-segmentation.git
