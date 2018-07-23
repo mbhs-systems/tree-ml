@@ -370,9 +370,9 @@ def run():
 
     num_classes = 2
     image_shape = (160, 576)
-    data_dir = './data'
+    data_dir = './data/BSDS300'
     runs_dir = './runs'
-    tests.test_for_kitti_dataset(data_dir)
+    tests.test_for_dataset(data_dir)
 
     # Download pretrained vgg model
     helper.maybe_download_pretrained_vgg(data_dir)
@@ -442,7 +442,7 @@ def run():
 
 def test_model():
     image_shape = (160, 576)
-    data_dir = './data'
+    data_dir = './BSDS300'
     runs_dir = './runs'
 
     with tf.Session() as sess:
